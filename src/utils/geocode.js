@@ -8,7 +8,7 @@ const geoCode = (address, callback) => {
         if (error) {
             callback('Unable to connect to weather service!', undefined)
         } else if (response.body) {
-            callback('Unable to find location. Try another search.', undefined)
+            callback('Unable to find location. Please try again later', undefined)
         } else {
             callback(undefined, {
                 location: '124',
